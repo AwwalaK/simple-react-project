@@ -3,20 +3,20 @@ import axios from 'axios';
 const base_URL = "http://localhost:8090/v1/articles";
 
 class ArtikelService {
-    getArtikel(artikel){
-        return axios.get(base_URL + artikel);
+    getArtikel(){
+        return axios.get(base_URL);
     }
 
-    createArtikel(artikel, state){
-        return axios.post(base_URL + artikel, state);
+    createArtikel(state){
+        return axios.post(base_URL, state);
     }
 
     getArtikelById(artikelId) {
         return axios.get(base_URL + artikelId);
     }
 
-    updateArtikel(artikel, state) {
-        return axios.put(base_URL + artikel, state);
+    updateArtikel(state) {
+        return axios.put(base_URL, state);
     }
 
     deleteArtikel(artikelId) {

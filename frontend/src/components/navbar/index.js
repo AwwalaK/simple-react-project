@@ -32,6 +32,7 @@ export class Navbar extends Component {
                             <Popover.Group as="nav" className="flex justify-end hidden md:flex space-x-10 ">
                                 <a href="/" className="hover:text-oren3" style={{color: this.myColor("/")}}>Home</a>
                                 <a href="/get-list-berita" className="hover:text-oren3" style={{color: this.myColor("/get-list-berita")}}>GetListBerita</a>
+                                <a href="/read-artikel" className="hover:text-oren3" style={{color: this.myColor("/read-artikel")}}>Read Artikel</a>
                                 <Popover className="relative">
                                     {({ open }) => (
                                         <>
@@ -84,6 +85,9 @@ export class Navbar extends Component {
                                             </a>
                                             <a href="/get-list-berita" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
                                                 <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/get-list-berita")}}>GetListBerita</span>
+                                            </a>
+                                            <a href="/read-artikel" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                                <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/read-artikel")}}>Read Artikel</span>
                                             </a>
                                             <a href="/produk-SBMPTN" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
                                                 <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/produk-SBMPTN")}}>Pelatihan SBMPTN</span>
